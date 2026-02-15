@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
-VERSION = '1.3.0'
+VERSION = '1.4.0'
 PACKAGE = 'setlist'
 REPO = "https://github.com/scottbrown/#{PACKAGE}"
 HASHES = {
-  darwin_amd64: '988a99dcd18f148de22bb7ed6c9e0b148d3a7f9448a5b28eb1a7582448598780',
-  darwin_arm64: 'db4f0ac041098ddac5ecd3ef455e9d9e97b9457fa04f78a1c6214b5a17ed758d',
-  linux_amd64: '6a158555be6e55b069f771c510d702b3afd866ac1def02598a58faee18c566f7',
-  linux_arm64: '9fee9a98c550e8e8d7aa0fb1af458063799e29faa1769968b44a8906cfc582fd',
+  darwin_amd64: '7888a679c638d38ebcc1dd4c42ceea08e7485ba06bf85b1a808b7272c943f5aa',
+  darwin_arm64: 'a5985a34ff7ee563b9b3217393bbecc716151b3c96abcf132cade3891039cfa0',
+  linux_amd64: '7fd51ac317c29ebad99559a04295738a2c0cdb944bfc4a12dcc477289e23032f',
+  linux_arm64: '4e95d4b5be12643c0bc2d66367394f9178ce67fdae42b690bf5ddad24cd2f676',
 }
 
 # Homebrew formula
