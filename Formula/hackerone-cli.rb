@@ -18,7 +18,7 @@ class HackeroneCli < Formula
   version VERSION
 
   def self.prefix
-    "#{REPO}/releases/download/v#{VERSION}/#{PACKAGE}_v#{VERSION}"
+    "#{REPO}/releases/download/v#{VERSION}/h1_v#{VERSION}"
   end
 
   on_macos do
