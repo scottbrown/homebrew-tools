@@ -46,6 +46,6 @@ class HackeroneCli < Formula
   end
 
   test do
-    system "#{bin}/h1, '--help'
+    system "#{bin}/h1", '--help'
   end
 end
