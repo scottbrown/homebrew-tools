@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 VERSION = '1.0.4'
-PACKAGE = 'homebrew-cli'
+PACKAGE = 'hackerone-cli'
 REPO = "https://github.com/scottbrown/#{PACKAGE}"
 HASHES = {
   darwin_amd64: '3bee8f6392b71ecfa605c25dcc9303b6f3784ec375d2a6adc24e163ae20e4dae',
