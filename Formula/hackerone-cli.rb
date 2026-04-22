@@ -42,7 +42,7 @@ class HackeroneCli < Formula
   end
 
   def install
-    bin.install PACKAGE
+    bin.install h1
   end
 
   test do
