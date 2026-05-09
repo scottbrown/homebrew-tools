@@ -2,6 +2,7 @@
 
 VERSION = '1.0.8'
 PACKAGE = 'hackerone-cli'
+BINARY = 'h1'
 REPO = "https://github.com/scottbrown/#{PACKAGE}"
 HASHES = {
   darwin_amd64: 'f87e8dd1e2c476a4a88ba128865cd82fd2c029666df087a8b388bb5fb76fd130',
@@ -18,7 +19,7 @@ class HackeroneCli < Formula
   version VERSION
 
   def self.prefix
-    "#{REPO}/releases/download/v#{VERSION}/h1_v#{VERSION}"
+    "#{REPO}/releases/download/v#{VERSION}/#{BINARY}_v#{VERSION}"
   end
 
   on_macos do
@@ -42,10 +43,10 @@ class HackeroneCli < Formula
   end
 
   def install
-    bin.install 'h1'
+    bin.install BINARY
   end
 
   test do
-    system "#{bin}/h1", '--help'
+    system "#{bin}/#{BINARY}", '--help'
   end
 end
