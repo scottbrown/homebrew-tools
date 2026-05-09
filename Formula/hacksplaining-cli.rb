@@ -2,6 +2,7 @@
 
 VERSION = '1.0.1'
 PACKAGE = 'hacksplaining-cli'
+BINARY = 'hacksplaining'
 REPO = "https://github.com/scottbrown/#{PACKAGE}"
 HASHES = {
   darwin_amd64: 'fc5d49e71ef65c6651a48b790fe4435fb3a6047e5189a9c471edb306ba90c8bb',
@@ -18,7 +19,7 @@ class HacksplainingCli < Formula
   version VERSION
 
   def self.prefix
-    "#{REPO}/releases/download/v#{VERSION}/hacksplaining_v#{VERSION}"
+    "#{REPO}/releases/download/v#{VERSION}/#{BINARY}_v#{VERSION}"
   end
 
   on_macos do
@@ -42,10 +43,10 @@ class HacksplainingCli < Formula
   end
 
   def install
-    bin.install 'hacksplaining'
+    bin.install BINARY
   end
 
   test do
-    system "#{bin}/hacksplaining", '--help'
+    system "#{bin}/#{BINARY}", '--help'
   end
 end
