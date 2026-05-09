@@ -1,0 +1,70 @@
+name: Test Formulas
+
+on:
+  pull_request:
+    paths:
+      - 'Formula/**'
+      - '.github/workflows/test-formulas.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'Formula/**'
+      - '.github/workflows/test-formulas.yml'
+  workflow_dispatch:
+
+jobs:
+  determine-formulas:
+    runs-on: ubuntu-latest
+    outputs:
+      formulas: ${{ steps.set.outputs.formulas }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Determine formulas to test
+        id: set
+        run: |
+          set -euo pipefail
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            git fetch origin "${{ github.base_ref }}" --depth=1
+            formulas=$(git diff --name-only --diff-filter=AM "origin/${{ github.base_ref }}...HEAD" -- 'Formula/*.rb' | sort -u)
+          else
+            formulas=$(ls Formula/*.rb)
+          fi
+
+          if [[ -z "$formulas" ]]; then
+            echo "formulas=[]" >> "$GITHUB_OUTPUT"
+          else
+            json=$(printf '%s\n' "$formulas" | jq -R -s -c 'split("\n") | map(select(length > 0))')
+            echo "formulas=$json" >> "$GITHUB_OUTPUT"
+          fi
+          echo "Selected formulas:"
+          printf '%s\n' "$formulas"
+
+  test:
+    needs: determine-formulas
+    if: needs.determine-formulas.outputs.formulas != '[]'
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-latest, ubuntu-latest]
+        formula: ${{ fromJson(needs.determine-formulas.outputs.formulas) }}
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+
+      - name: brew style
+        run: brew style "${{ matrix.formula }}"
+
+      - name: brew audit
+        run: brew audit --strict --online "${{ matrix.formula }}"
+
+      - name: brew install
+        run: brew install --verbose "${{ matrix.formula }}"
+
+      - name: brew test
+        run: brew test --verbose "${{ matrix.formula }}"
