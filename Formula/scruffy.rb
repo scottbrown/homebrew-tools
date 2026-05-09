@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 PACKAGE = "scruffy"
-REPO = "https://github.com/scottbrown/#{PACKAGE}"
+REPO = "https://github.com/scottbrown/#{PACKAGE}".freeze
 VERSION = "0.0.0"
 HASHES = {
   darwin_amd64: "ba5cbbee1ecc253be0e09ff14eeec4a2d2fbe41a46e85b6f0d1c8578fbce7e01",
@@ -13,9 +13,9 @@ HASHES = {
 # Homebrew formula
 class Scruffy < Formula
   desc "CLI app that cleans Cloudflare IP access rules"
-  homepage REPO
-  license "MIT"
+  homepage "https://github.com/scottbrown/scruffy"
   version VERSION
+  license "MIT"
 
   def self.prefix
     "#{REPO}/releases/download/v#{VERSION}/#{PACKAGE}-v#{VERSION}"

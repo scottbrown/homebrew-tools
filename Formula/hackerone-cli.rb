@@ -3,7 +3,7 @@
 VERSION = "1.0.8"
 PACKAGE = "hackerone-cli"
 BINARY = "h1"
-REPO = "https://github.com/scottbrown/#{PACKAGE}"
+REPO = "https://github.com/scottbrown/#{PACKAGE}".freeze
 HASHES = {
   darwin_amd64: "f87e8dd1e2c476a4a88ba128865cd82fd2c029666df087a8b388bb5fb76fd130",
   darwin_arm64: "ea74c47732115477fa53f6aa3555fa48f0fb8c9fd68f5f5cd44a5f9ba052aa84",
@@ -14,9 +14,9 @@ HASHES = {
 # Homebrew formula
 class HackeroneCli < Formula
   desc "CLI for accessing HackerOne"
-  homepage REPO
-  license "MIT"
+  homepage "https://github.com/scottbrown/hackerone-cli"
   version VERSION
+  license "MIT"
 
   def self.prefix
     "#{REPO}/releases/download/v#{VERSION}/#{BINARY}_v#{VERSION}"

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 PACKAGE = "gitgrab"
-REPO = "https://github.com/scottbrown/#{PACKAGE}"
+REPO = "https://github.com/scottbrown/#{PACKAGE}".freeze
 VERSION = "1.0.2"
 HASHES = {
   darwin_amd64: "c058f824aea5ec0c091cad7470b6d308c3c9585ada66639620bbf1a2fea0107b",
@@ -13,9 +13,9 @@ HASHES = {
 # Homebrew formula
 class Gitgrab < Formula
   desc "CLI utility to clone all Github repositories in an organization"
-  homepage REPO
-  license "MIT"
+  homepage "https://github.com/scottbrown/gitgrab"
   version VERSION
+  license "MIT"
 
   def self.prefix
     "#{REPO}/releases/download/v#{VERSION}/#{PACKAGE}-v#{VERSION}"

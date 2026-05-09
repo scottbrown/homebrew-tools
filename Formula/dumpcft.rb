@@ -2,7 +2,7 @@
 
 VERSION = "1.0.0"
 PACKAGE = "dumpcft"
-REPO = "https://github.com/scottbrown/#{PACKAGE}"
+REPO = "https://github.com/scottbrown/#{PACKAGE}".freeze
 HASHES = {
   darwin_amd64: "997031e9249cde1d9240ea2837d5a92a39cf9e03bfa64dbe02b3f0dc5403c61f",
   darwin_arm64: "e6198672c41430df212221a60c24cdf64d9aaa013a4cbac8a539200e55a64d5f",
@@ -13,9 +13,9 @@ HASHES = {
 # Homebrew formula
 class Dumpcft < Formula
   desc "Dumps the templates of all CloudFormation stacks in one or more regions"
-  homepage REPO
-  license "MIT"
+  homepage "https://github.com/scottbrown/dumpcft"
   version VERSION
+  license "MIT"
 
   def self.prefix
     "#{REPO}/releases/download/v#{VERSION}/#{PACKAGE}_v#{VERSION}"

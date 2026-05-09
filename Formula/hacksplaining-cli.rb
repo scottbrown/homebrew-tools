@@ -3,7 +3,7 @@
 VERSION = "1.0.1"
 PACKAGE = "hacksplaining-cli"
 BINARY = "hacksplaining"
-REPO = "https://github.com/scottbrown/#{PACKAGE}"
+REPO = "https://github.com/scottbrown/#{PACKAGE}".freeze
 HASHES = {
   darwin_amd64: "fc5d49e71ef65c6651a48b790fe4435fb3a6047e5189a9c471edb306ba90c8bb",
   darwin_arm64: "9aa732ac504b63d04c60f35abb328e1b832b5409b84c1a03cf8510c53339667e",
@@ -14,9 +14,9 @@ HASHES = {
 # Homebrew formula
 class HacksplainingCli < Formula
   desc "CLI for Hacksplaining for ease of use by humans and AI"
-  homepage REPO
-  license "MIT"
+  homepage "https://github.com/scottbrown/hacksplaining-cli"
   version VERSION
+  license "MIT"
 
   def self.prefix
     "#{REPO}/releases/download/v#{VERSION}/#{BINARY}_v#{VERSION}"

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 PACKAGE = "uuid"
-REPO = "https://github.com/scottbrown/#{PACKAGE}"
+REPO = "https://github.com/scottbrown/#{PACKAGE}".freeze
 VERSION = "1.0.4"
 HASHES = {
   darwin_amd64: "77ff12e5a847398fead591ac14fd8c48818aa7aa04c9bb46223b56fdfe1f544e",
@@ -12,10 +12,10 @@ HASHES = {
 
 # Homebrew formula
 class Uuid < Formula
-  desc "Generate and parse UUIDs from the command line"
-  homepage REPO
-  license "MIT"
+  desc "Generate and parse UUIDs from the command-line"
+  homepage "https://github.com/scottbrown/uuid"
   version VERSION
+  license "MIT"
 
   def self.prefix
     "#{REPO}/releases/download/v#{VERSION}/#{PACKAGE}-v#{VERSION}"

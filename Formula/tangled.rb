@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 PACKAGE = "tangled"
-REPO = "https://github.com/scottbrown/#{PACKAGE}"
+REPO = "https://github.com/scottbrown/#{PACKAGE}".freeze
 VERSION = "0.0.1"
 HASHES = {
   darwin_amd64: "5719bc937165a64fb54b12884bb9f2f6d64700f600b031f74c3c9483652d2a76",
@@ -13,9 +13,9 @@ HASHES = {
 # Homebrew formula
 class Tangled < Formula
   desc "Visualize Go dependency relationships"
-  homepage REPO
-  license "MIT"
+  homepage "https://github.com/scottbrown/tangled"
   version VERSION
+  license "MIT"
 
   def self.prefix
     "#{REPO}/releases/download/v#{VERSION}/#{PACKAGE}-v#{VERSION}"

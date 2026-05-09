@@ -2,7 +2,7 @@
 
 VERSION = "1.2.0"
 PACKAGE = "pulse"
-REPO = "https://github.com/scottbrown/#{PACKAGE}"
+REPO = "https://github.com/scottbrown/#{PACKAGE}".freeze
 HASHES = {
   darwin_amd64: "b0aa87f783fb9e0470502075bdd712851bc43054a96228c75a70dacf157c2b2c",
   darwin_arm64: "046c0aadddeccaf86c60508b68b201084f9af5aa60e61104873a3423755347ae",
@@ -13,9 +13,9 @@ HASHES = {
 # Homebrew formula
 class Pulse < Formula
   desc "Risk and performance measurement framework CLI for organizational programs"
-  homepage REPO
-  license "MIT"
+  homepage "https://github.com/scottbrown/pulse"
   version VERSION
+  license "MIT"
 
   def self.prefix
     "#{REPO}/releases/download/v#{VERSION}/#{PACKAGE}"
