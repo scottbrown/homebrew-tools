@@ -1,20 +1,20 @@
 # frozen_string_literal: true
 
-VERSION = '1.2.0'
-PACKAGE = 'pulse'
+VERSION = "1.2.0"
+PACKAGE = "pulse"
 REPO = "https://github.com/scottbrown/#{PACKAGE}"
 HASHES = {
-  darwin_amd64: 'b0aa87f783fb9e0470502075bdd712851bc43054a96228c75a70dacf157c2b2c',
-  darwin_arm64: '046c0aadddeccaf86c60508b68b201084f9af5aa60e61104873a3423755347ae',
-  linux_amd64: 'bc5d2ee852e4c213a3b287f84e757099dfe15db3853c7afdfa3bed437b570fcf',
-  linux_arm64: 'f5f29a98c6c0ba7988261f818f08d5fb3d46bbf5c23aba3c45d5a970705401bb',
-}
+  darwin_amd64: "b0aa87f783fb9e0470502075bdd712851bc43054a96228c75a70dacf157c2b2c",
+  darwin_arm64: "046c0aadddeccaf86c60508b68b201084f9af5aa60e61104873a3423755347ae",
+  linux_amd64:  "bc5d2ee852e4c213a3b287f84e757099dfe15db3853c7afdfa3bed437b570fcf",
+  linux_arm64:  "f5f29a98c6c0ba7988261f818f08d5fb3d46bbf5c23aba3c45d5a970705401bb",
+}.freeze
 
 # Homebrew formula
 class Pulse < Formula
-  desc 'A Risk and Performance measurement framework CLI application for organizational programs (e.g. Information Security, Legal).'
+  desc "Risk and performance measurement framework CLI for organizational programs"
   homepage REPO
-  license 'MIT'
+  license "MIT"
   version VERSION
 
   def self.prefix
@@ -46,6 +46,6 @@ class Pulse < Formula
   end
 
   test do
-    system "#{bin}/#{PACKAGE}", '--help'
+    system "#{bin}/#{PACKAGE}", "--help"
   end
 end

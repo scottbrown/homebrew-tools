@@ -1,20 +1,20 @@
 # frozen_string_literal: true
 
-PACKAGE = 'uuid'
+PACKAGE = "uuid"
 REPO = "https://github.com/scottbrown/#{PACKAGE}"
-VERSION = '1.0.4'
+VERSION = "1.0.4"
 HASHES = {
-  darwin_amd64: '77ff12e5a847398fead591ac14fd8c48818aa7aa04c9bb46223b56fdfe1f544e',
-  darwin_arm64: '00e1ee9c8e6c6dafc38695f33c889da8fd6fe3b5577c5f866679befe579bad35',
-  linux_amd64:  '5c5c66fb8d1d15304cf06d72eb519cbba18bacd4dc06b470ecac9120cbef12e0',
-  linux_arm64:  '44ed3ea219cb3ed88390fd2c80d9407922d2b8f5224902f682c8c594ea21f3ef',
-}
+  darwin_amd64: "77ff12e5a847398fead591ac14fd8c48818aa7aa04c9bb46223b56fdfe1f544e",
+  darwin_arm64: "00e1ee9c8e6c6dafc38695f33c889da8fd6fe3b5577c5f866679befe579bad35",
+  linux_amd64:  "5c5c66fb8d1d15304cf06d72eb519cbba18bacd4dc06b470ecac9120cbef12e0",
+  linux_arm64:  "44ed3ea219cb3ed88390fd2c80d9407922d2b8f5224902f682c8c594ea21f3ef",
+}.freeze
 
 # Homebrew formula
 class Uuid < Formula
-  desc 'A lightweight, dependency-free Go CLI application for generating and parsing UUIDs. Supports multiple UUID versions with a focus on simplicity, performance, and standards compliance.'
+  desc "Generate and parse UUIDs from the command line"
   homepage REPO
-  license 'MIT'
+  license "MIT"
   version VERSION
 
   def self.prefix
@@ -46,6 +46,6 @@ class Uuid < Formula
   end
 
   test do
-    system "#{bin}/#{PACKAGE}", '--help'
+    system "#{bin}/#{PACKAGE}", "--help"
   end
 end
