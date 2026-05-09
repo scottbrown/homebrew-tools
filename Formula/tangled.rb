@@ -1,21 +1,21 @@
 # frozen_string_literal: true
 
-PACKAGE = 'tangled'
-REPO = "https://github.com/scottbrown/#{PACKAGE}"
-VERSION = '0.0.1'
+PACKAGE = "tangled"
+REPO = "https://github.com/scottbrown/#{PACKAGE}".freeze
+VERSION = "0.0.1"
 HASHES = {
-  darwin_amd64: '5719bc937165a64fb54b12884bb9f2f6d64700f600b031f74c3c9483652d2a76',
-  darwin_arm64: '583247a90621a6ec9dece881d9dedd905ab55851fd6fdba27a42cd1d47f3fae0',
-  linux_amd64:  'c57fc6da909cb0799956630bb4b33d0c20e0ca25214b8c397a5b26ba75598ef5',
-  linux_arm64:  '3d974931650885a92c2b8e311582f992bf6344950656a270710d081c8f31d511',
-}
+  darwin_amd64: "5719bc937165a64fb54b12884bb9f2f6d64700f600b031f74c3c9483652d2a76",
+  darwin_arm64: "583247a90621a6ec9dece881d9dedd905ab55851fd6fdba27a42cd1d47f3fae0",
+  linux_amd64:  "c57fc6da909cb0799956630bb4b33d0c20e0ca25214b8c397a5b26ba75598ef5",
+  linux_arm64:  "3d974931650885a92c2b8e311582f992bf6344950656a270710d081c8f31d511",
+}.freeze
 
 # Homebrew formula
 class Tangled < Formula
-  desc 'A way to visualize Go dependency relationships'
-  homepage REPO
-  license 'MIT'
+  desc "Visualize Go dependency relationships"
+  homepage "https://github.com/scottbrown/tangled"
   version VERSION
+  license "MIT"
 
   def self.prefix
     "#{REPO}/releases/download/v#{VERSION}/#{PACKAGE}-v#{VERSION}"
@@ -46,6 +46,6 @@ class Tangled < Formula
   end
 
   test do
-    system "#{bin}/#{PACKAGE}", '--help'
+    system "#{bin}/#{PACKAGE}", "--help"
   end
 end
