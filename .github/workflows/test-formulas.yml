@@ -57,8 +57,10 @@ jobs:
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@master
 
-      - name: Tap this repo locally
-        run: brew tap scottbrown/tools "$GITHUB_WORKSPACE"
+      - name: Set up local tap
+        run: |
+          brew tap-new --no-git local/test
+          cp Formula/*.rb "$(brew --repository local/test)/Formula/"
 
       - name: Resolve formula name
         id: formula
@@ -68,10 +70,10 @@ jobs:
         run: brew style "${{ matrix.formula }}"
 
       - name: brew audit
-        run: brew audit --strict --online "scottbrown/tools/${{ steps.formula.outputs.name }}"
+        run: brew audit --strict --online "local/test/${{ steps.formula.outputs.name }}"
 
       - name: brew install
-        run: brew install --verbose "scottbrown/tools/${{ steps.formula.outputs.name }}"
+        run: brew install --verbose "local/test/${{ steps.formula.outputs.name }}"
 
       - name: brew test
-        run: brew test --verbose "scottbrown/tools/${{ steps.formula.outputs.name }}"
+        run: brew test --verbose "local/test/${{ steps.formula.outputs.name }}"
