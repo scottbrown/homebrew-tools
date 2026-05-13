@@ -14,7 +14,7 @@ HASHES = {
 # Homebrew formula
 class SocketCli < Formula
   desc "CLI for accessing Socket"
-  homepage REPO
+  homepage "https://github.com/scottbrown/socket-cli"
   version VERSION
   license "MIT"
 
