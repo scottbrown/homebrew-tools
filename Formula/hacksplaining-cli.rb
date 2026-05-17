@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
-VERSION = "1.0.1"
+VERSION = "1.0.2"
 PACKAGE = "hacksplaining-cli"
 BINARY = "hacksplaining"
 REPO = "https://github.com/scottbrown/#{PACKAGE}".freeze
 HASHES = {
-  darwin_amd64: "fc5d49e71ef65c6651a48b790fe4435fb3a6047e5189a9c471edb306ba90c8bb",
-  darwin_arm64: "9aa732ac504b63d04c60f35abb328e1b832b5409b84c1a03cf8510c53339667e",
-  linux_amd64:  "1e62e16b5669e596d1593d07d58c29fd38c9aff08db9b7aaaa43a8691be3997f",
-  linux_arm64:  "e6112747275b7fe4eda61d7b3425af30d33fd566d1da2aee279ba0ed7c8a8606",
+  darwin_amd64: "0783296b596f393732f1e0a08835d5a48aea2febc77ef1289e0eeb051d3444d2",
+  darwin_arm64: "76e1b44c53d4462265534f97bf76f348888ecc7ff7442552449a1a45a7f058be",
+  linux_amd64:  "a61d93e5e2669212339e655c404a52941336dacda085b44ef9a5b0c0c32cc270",
+  linux_arm64:  "7f30b352f24754d457a99cb38668d1b2f0fa5d692e228489793e21d9d486170e",
 }.freeze
 
 # Homebrew formula
