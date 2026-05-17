@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
-VERSION = "0.1.0"
+VERSION = "0.1.1"
 PACKAGE = "socket-cli"
 BINARY = "socket"
 REPO = "https://github.com/scottbrown/#{PACKAGE}".freeze
 HASHES = {
-  darwin_amd64: "26409c32d335934e9051daa180ef71d1513d6885fd848b300a1161f3a60a63d8",
-  darwin_arm64: "55b5785f5fe7a64590092868ca15a0e8b498a7273683e7bb126a19b7cdf27592",
-  linux_amd64:  "cb902478ec951f8b93d0ae5c3ee578c42054db4c1a1fa745546a627eed1f3018",
-  linux_arm64:  "56f2784e80cff11ec1af6dee274b8d8db5f02cceffbc929add26aac70ec69bab",
+  darwin_amd64: "3ce979116654e8001ef67e631d3a65b99c39f8fa2fa78f40a9c4cc0343ecec98",
+  darwin_arm64: "1401e01f480c3b267b69d1bca21dfdbb78d96470d837f1f97f272bc20f450cce",
+  linux_amd64:  "ab1c5f0757e56b97802de080d344b9da9c09cf243f200f8f64eafc68232a5242",
+  linux_arm64:  "1170103230507606db1fb7d163fc9c4bf18492f24e48fb996bbb48649d427709",
 }.freeze
 
 # Homebrew formula
