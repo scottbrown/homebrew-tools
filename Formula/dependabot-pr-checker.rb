@@ -14,7 +14,6 @@ HASHES = {
 class DependabotPrChecker < Formula
   desc "Retrieves metrics on stale Dependabot PRs across a Github organization"
   homepage "https://github.com/scottbrown/dependabot-pr-checker"
-  version VERSION
   license "MIT"
 
   def self.prefix
