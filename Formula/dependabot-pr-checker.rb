@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
-VERSION = "1.0.0"
+VERSION = "2.0.1"
 PACKAGE = "dependabot-pr-checker"
 REPO = "https://github.com/scottbrown/#{PACKAGE}".freeze
 HASHES = {
-  darwin_amd64: "608bc0fb0a3a02914e19594755d12c5dec53fa7a8c671dbd2cc7498bc7497994",
-  darwin_arm64: "22bd283dbfd3caf777d2569243b564d59e957ffd8a174b0b388e6dfa1d0e1ec2",
-  linux_amd64:  "0e49a99c879e21917a2848d83a5f64eaf07f0706c30153022d51440fe029a7de",
-  linux_arm64:  "75529c47cbf81e75e1ccf893d0e240103fb5cab04cd65cd0edb3ac0b63ff90e0",
+  darwin_amd64: "3ae74c1b9e7e60b3c44eeba0b780b97450eb11b4c16614c634ee659e9b4fd91d",
+  darwin_arm64: "e81d88b806cd55bedb61c58152a56615368299e9c49be9b22797d631d6f26614",
+  linux_amd64:  "aecb69f83f0f8fe98384196e293b8abf58786e3c73a20ec5a82f329448ac1788",
+  linux_arm64:  "ab7c4dbaa46c01291ff827f0709a98e22d819bc914c4f0324d3d1a45bc0b007b",
 }.freeze
 
 # Homebrew formula
