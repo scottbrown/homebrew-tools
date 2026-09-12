@@ -1,0 +1,21 @@
+version: 2
+
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: "08:00"
+      timezone: Etc/UTC
+    open-pull-requests-limit: 5
+    # Minor and patch bumps are routine, so they land together in one PR.
+    # Major bumps stay separate: the checkout v4 -> v7 and github-script
+    # v7 -> v9 moves in #9 each needed their own compatibility review.
+    groups:
+      actions-minor-patch:
+        patterns:
+          - "*"
+        update-types:
+          - minor
+          - patch
