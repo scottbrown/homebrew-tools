@@ -15,7 +15,6 @@ HASHES = {
 class HacksplainingCli < Formula
   desc "CLI for Hacksplaining for ease of use by humans and AI"
   homepage "https://github.com/scottbrown/hacksplaining-cli"
-  version VERSION
   license "MIT"
 
   def self.prefix

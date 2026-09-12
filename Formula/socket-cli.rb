@@ -15,7 +15,6 @@ HASHES = {
 class SocketCli < Formula
   desc "CLI for accessing Socket"
   homepage "https://github.com/scottbrown/socket-cli"
-  version VERSION
   license "MIT"
 
   def self.prefix

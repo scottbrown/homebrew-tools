@@ -14,7 +14,6 @@ HASHES = {
 class Tangled < Formula
   desc "Visualize Go dependency relationships"
   homepage "https://github.com/scottbrown/tangled"
-  version VERSION
   license "MIT"
 
   def self.prefix

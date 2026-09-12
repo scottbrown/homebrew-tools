@@ -14,7 +14,6 @@ HASHES = {
 class Uuid < Formula
   desc "Generate and parse UUIDs from the command-line"
   homepage "https://github.com/scottbrown/uuid"
-  version VERSION
   license "MIT"
 
   def self.prefix

@@ -14,7 +14,6 @@ HASHES = {
 class Gitgrab < Formula
   desc "CLI utility to clone all Github repositories in an organization"
   homepage "https://github.com/scottbrown/gitgrab"
-  version VERSION
   license "MIT"
 
   def self.prefix
