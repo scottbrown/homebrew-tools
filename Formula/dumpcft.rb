@@ -14,7 +14,6 @@ HASHES = {
 class Dumpcft < Formula
   desc "Dumps the templates of all CloudFormation stacks in one or more regions"
   homepage "https://github.com/scottbrown/dumpcft"
-  version VERSION
   license "MIT"
 
   def self.prefix

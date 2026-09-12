@@ -14,7 +14,6 @@ HASHES = {
 class Pulse < Formula
   desc "Risk and performance measurement framework CLI for organizational programs"
   homepage "https://github.com/scottbrown/pulse"
-  version VERSION
   license "MIT"
 
   def self.prefix

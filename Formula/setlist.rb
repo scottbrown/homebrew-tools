@@ -14,7 +14,6 @@ HASHES = {
 class Setlist < Formula
   desc "Generate .aws/config files based on AWS SSO rules"
   homepage "https://github.com/scottbrown/setlist"
-  version VERSION
   license "MIT"
 
   def self.prefix

@@ -15,7 +15,6 @@ HASHES = {
 class HackeroneCli < Formula
   desc "CLI for accessing HackerOne"
   homepage "https://github.com/scottbrown/hackerone-cli"
-  version VERSION
   license "MIT"
 
   def self.prefix

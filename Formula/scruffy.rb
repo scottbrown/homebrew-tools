@@ -14,7 +14,6 @@ HASHES = {
 class Scruffy < Formula
   desc "CLI app that cleans Cloudflare IP access rules"
   homepage "https://github.com/scottbrown/scruffy"
-  version VERSION
   license "MIT"
 
   def self.prefix
