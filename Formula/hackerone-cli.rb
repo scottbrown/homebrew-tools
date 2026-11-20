@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
-VERSION = "1.0.10"
+VERSION = "1.0.11"
 PACKAGE = "hackerone-cli"
 BINARY = "h1"
 REPO = "https://github.com/scottbrown/#{PACKAGE}".freeze
 HASHES = {
-  darwin_amd64: "795249574ba279b337a53f1d1064726d974d66bd50d2a669338cfcef1ebedbfd",
-  darwin_arm64: "08ea296e21b512f5da534e1771590d5c9648369d3965a9130aab2c44912124e7",
-  linux_amd64:  "d3a97285ba5139f56df345d192c5e624de48f44643190b5f78c515769cfdc076",
-  linux_arm64:  "67c4b036925b1f8ab03f3d9687cfffec7ffea203e5663e2f55f96e887a3d0c7a",
+  darwin_amd64: "0faef8ca6a2e902a55fc369d2555edf209721ab8a21100de27c377d1ab8a1cf6",
+  darwin_arm64: "78b1aad678ebc945bcd0bc64c45cd8f289464c459cf134b5a3545a770cbc8231",
+  linux_amd64:  "74447588f1ee67ffdb4da06a3b5556f6c2611d72027ff0900471e0df63520d83",
+  linux_arm64:  "7ef24b4a9fed00d77d6f83df96a2b6eb83518d1208a096f1012811d8c6d64564",
 }.freeze
 
 # Homebrew formula
