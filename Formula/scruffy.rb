@@ -2,12 +2,12 @@
 
 PACKAGE = "scruffy"
 REPO = "https://github.com/scottbrown/#{PACKAGE}".freeze
-VERSION = "0.0.0"
+VERSION = "0.0.1"
 HASHES = {
-  darwin_amd64: "ba5cbbee1ecc253be0e09ff14eeec4a2d2fbe41a46e85b6f0d1c8578fbce7e01",
-  darwin_arm64: "4c6acfac9e6b83ec69e6ff39ba719534507ced479196f17816d1f32fb27476e3",
-  linux_amd64:  "adbe4946dec4b461e79c74400dff0c400708625f8afb77cf394987cc92a2ab4b",
-  linux_arm64:  "cc88a8464118a3aecf9005860313cc660531e4cc52fb02acafe7df6ca054fa54",
+  darwin_amd64: "5c7a0dd66bc89cb757d99f2d82a397b1563a86e07b0765d7bd6b0b611cd3ea14",
+  darwin_arm64: "dc46ef2d9576fa06898bc696b3d90872a78ebd525bfbf5b66cecf6bc646e28ac",
+  linux_amd64:  "147ec581dd8ed2a3a1dfd656ae4508959c1b95ced8d62e7f9046972547e1195c",
+  linux_arm64:  "1cfb9ac7edf74b3715e012e3fc10396c74aa9fa4341dc5f303eab620557d0826",
 }.freeze
 
 # Homebrew formula
