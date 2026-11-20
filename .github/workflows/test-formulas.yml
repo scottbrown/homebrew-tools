@@ -61,6 +61,7 @@ jobs:
         run: |
           brew tap-new --no-git local/test
           cp Formula/*.rb "$(brew --repository local/test)/Formula/"
+          brew trust --tap local/test
 
       - name: Resolve formula name
         id: formula

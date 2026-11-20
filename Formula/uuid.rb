@@ -2,12 +2,12 @@
 
 PACKAGE = "uuid"
 REPO = "https://github.com/scottbrown/#{PACKAGE}".freeze
-VERSION = "1.0.4"
+VERSION = "1.0.5"
 HASHES = {
-  darwin_amd64: "77ff12e5a847398fead591ac14fd8c48818aa7aa04c9bb46223b56fdfe1f544e",
-  darwin_arm64: "00e1ee9c8e6c6dafc38695f33c889da8fd6fe3b5577c5f866679befe579bad35",
-  linux_amd64:  "5c5c66fb8d1d15304cf06d72eb519cbba18bacd4dc06b470ecac9120cbef12e0",
-  linux_arm64:  "44ed3ea219cb3ed88390fd2c80d9407922d2b8f5224902f682c8c594ea21f3ef",
+  darwin_amd64: "89aede7e339c6a898d29efd0d25da67d85e88e005cdfd812fdee4c581fbf7e8a",
+  darwin_arm64: "735b159cc6c0e3f2185a9bf21da845b4f431f49f7e63ad0e95dd22dd436f6cc4",
+  linux_amd64:  "fef8364e7890f91d51e8fc2be5fd17700a7f722fb12d85d9cb12114706394090",
+  linux_arm64:  "fb3189a3e827166e6ec1537e19be4bb1a6d4efd1a54f2950fa89f5a47aaf3667",
 }.freeze
 
 # Homebrew formula
