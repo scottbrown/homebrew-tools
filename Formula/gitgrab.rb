@@ -2,12 +2,12 @@
 
 PACKAGE = "gitgrab"
 REPO = "https://github.com/scottbrown/#{PACKAGE}".freeze
-VERSION = "1.0.2"
+VERSION = "1.0.3"
 HASHES = {
-  darwin_amd64: "c058f824aea5ec0c091cad7470b6d308c3c9585ada66639620bbf1a2fea0107b",
-  darwin_arm64: "8566806a85e9ae0391173fe43a6b1e90089ba024ac54645356305beb33322ea7",
-  linux_amd64:  "cc5ab86e3604479f9999cc8e3f6e33a214d15b914ce8dda0ea51512215cb5aad",
-  linux_arm64:  "c7385b877286f6de0531d6825d032e667b353568b17ec3ec81e5f7359ca3e5cf",
+  darwin_amd64: "f87c7c4ed710a407741fb987194af155d88730bf334e9f553887ab7b2c5c80a0",
+  darwin_arm64: "d5f90cadc71d896c0fed80180915627aea09a474a220eebf83d46dfbcfa53994",
+  linux_amd64:  "9a73e4df031f2d9c7c8362bc7a526ce4417342ec9fe289ffe4e3cdadab240aaf",
+  linux_arm64:  "35e84d556291cccbf4471f38b18106b1e22754b343e53d8288e5c972645bf360",
 }.freeze
 
 # Homebrew formula
