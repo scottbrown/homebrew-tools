@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
-VERSION = "1.0.0"
+VERSION = "1.0.1"
 PACKAGE = "dumpcft"
 REPO = "https://github.com/scottbrown/#{PACKAGE}".freeze
 HASHES = {
-  darwin_amd64: "997031e9249cde1d9240ea2837d5a92a39cf9e03bfa64dbe02b3f0dc5403c61f",
-  darwin_arm64: "e6198672c41430df212221a60c24cdf64d9aaa013a4cbac8a539200e55a64d5f",
-  linux_amd64:  "3633c9dbc771a012abd0a1a559c699a65a86d514ffa722d8428e022cdea528cb",
-  linux_arm64:  "1e9412705e6ce1622c2c6bfd886d7376b8c55be374fb6c62f04ae02e6dd04f5d",
+  darwin_amd64: "a1edb9133cf425a1871017dc0fd2a3f68840cb3a5bc3ac98d43100baf45b10ae",
+  darwin_arm64: "63a2055b63aea4751365d663e7a3751fa5a260a305a803d39884335323e78cb6",
+  linux_amd64:  "2669c9a2fd43ffd90a048aacf277f28b8113fc9ca8d456105b41a04000d03f64",
+  linux_arm64:  "b45237fb203c20f7a0957f7c9a9909297743c6b2f275ef13d0f5c291b7688058",
 }.freeze
 
 # Homebrew formula

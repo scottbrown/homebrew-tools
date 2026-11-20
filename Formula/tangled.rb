@@ -2,12 +2,12 @@
 
 PACKAGE = "tangled"
 REPO = "https://github.com/scottbrown/#{PACKAGE}".freeze
-VERSION = "0.0.1"
+VERSION = "0.0.2"
 HASHES = {
-  darwin_amd64: "5719bc937165a64fb54b12884bb9f2f6d64700f600b031f74c3c9483652d2a76",
-  darwin_arm64: "583247a90621a6ec9dece881d9dedd905ab55851fd6fdba27a42cd1d47f3fae0",
-  linux_amd64:  "c57fc6da909cb0799956630bb4b33d0c20e0ca25214b8c397a5b26ba75598ef5",
-  linux_arm64:  "3d974931650885a92c2b8e311582f992bf6344950656a270710d081c8f31d511",
+  darwin_amd64: "d18876216f1a9e8b62dc8575566a2d9bcfb211c1f639ba8ace56ded0465bdb86",
+  darwin_arm64: "2699f1b6c218b43f73a2d1dbe44c56a14bd5a931a98c90555a4cd93ef29c796e",
+  linux_amd64:  "8bd9049b0a7ec1624c1e84daee95c8db5b95f901ec75ddd29f1bfaeae3914867",
+  linux_arm64:  "ceed79627a8b7dbc8c66d04a0db85ee47b1bde6e65feaa05e428f05b54908ea8",
 }.freeze
 
 # Homebrew formula
